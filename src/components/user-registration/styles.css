@@ -1,0 +1,31 @@
+.input-field {
+  margin: 0 auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-warning {
+  color: rgb(255, 0, 0);
+  font-size: 14px;
+}
+
+.btn {
+  width: 100px;
+  margin-top: 10px;
+  border: none;
+  background-color: rgb(114, 180, 255);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.player-input {
+  border: 1px solid rgb(114, 180, 255);
+  border-radius: 3px;
+}
+
+.player-input:focus {
+  border: 2px solid rgb(27, 133, 255);
+  border-radius: 3px;
+  outline: none;
+}

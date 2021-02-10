@@ -1,26 +1,28 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
 
 import { Game } from "./components/game/component"
+import { Registration } from "./components/user-registration/component"
 
-function App() {
+const App = () => {
+  const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
+  const [userName, setUserName] = useState("");
+
+  const register = (userName) => {
+    setUserName(userName);
+    setIsUserLoggedIn(true);
+  }
+
+  const logout = () => {
+    setIsUserLoggedIn(false);
+  }
+
   return (
     <div className="App">
-      <Game></Game>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {isUserLoggedIn 
+        ? <Game user={userName} logout={logout}/> 
+        : <Registration register={register}/>
+      }
     </div>
   );
 }

@@ -1,0 +1,68 @@
+.btn {
+  width: 100px;
+  margin-top: 10px;
+  border: none;
+  background-color: rgb(114, 180, 255);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.game-btn {
+  position: absolute;
+  background-color: rgb(138, 235, 159);
+  top: 5px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+}
+
+.game-btn:active {
+  width: 95px;
+  height: 95px;
+}
+
+.game-btn:focus {
+  outline: none;
+}
+
+.counter {
+  position: absolute;
+  top: 40px;
+}
+.game-btn-container {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.confirmation-btns {
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.yes-btn, .start-btn {
+  width: 100px;
+  margin-top: 10px;
+  border: none;
+  background-color: rgb(114, 180, 255);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.no-btn {
+  width: 100px;
+  margin-top: 10px;
+  border: none;
+  background-color: rgb(255, 167, 96);
+  padding: 5px;
+  border-radius: 5px;
+}
